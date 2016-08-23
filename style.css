@@ -1,0 +1,33 @@
+/* Custom CSS by Garrett Estrin | Garrett.Estrin.com */
+
+
+#container {
+  width: 208px;
+  height: 312px;
+  margin: 50px auto;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: solid black 1px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#0 {
+  width: 102px;
+  height: 50px;
+  border: solid black 1px;
+  float: left;
+  background-color: red;
+}
+
+#readout {
+  width: 206px;
+  height: 50px;
+  border: solid black 1px;
+  border-radius: 10%;
+  margin-bottom: 5px;
+}
