@@ -34,14 +34,16 @@ operators.forEach(function(el){
   el.addEventListener('click', function(){
     if(readOut.innerText == 0){
       // do nothing
-    } else if (expression.length == 2) {
-      expression[2] = readOut.innerText;
-      evaluate();
-      expression[0] = readOut.innerText;
+      console.log(this.innerText + " else");
     }
+    // else if(Number.isInteger(readOut.innerText)===false) {
+    //   // do nothing
+    //   console.log(this.innerText + " else if");
+    // }
     else {
       expression[0] = readOut.innerText;
       readOut.innerText = this.innerText;
+      console.log(this.innerText + " else");
 
     }
   })
