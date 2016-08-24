@@ -80,11 +80,11 @@ var evaluate = function(){
     readOut.innerText = Number(expression[0]) / Number(expression[2]);
   } expression = [];
   } else if (expression[1] == '%'){
-    var result = Number(expression[2]) / Number(expression[0]);
+    var result = Number(expression[0]) / Number(expression[2]) * 100;
     if(result.length > 8) {
       readOut.innerText = Number(result).toExponential(3);
     }else {
-    readOut.innerText = Number(expression[2]) / Number(expression[0]);
+    readOut.innerText = Number(expression[0]) / Number(expression[2]) * 100;
   } expression = [];
   } else {
     console.log('need more functions')
